@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/***********************************
+		REFERENCES
+font-sizes
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1rem
+0.618rem
+
+font-families
+Droid Serif, Droid Sans
+
+colors
+#000000
+#222222
+#333333
+#D4D4D4
+#CC3300
+#BADA55
+#FFFFFF
+plus the shadow for the text
+
+
+***********************************/
+
+*{
+	padding:0;
+	margin:0;
+}
+
+/***********************************
+		DEFAULTS
+***********************************/
+body{
+	background-color: #222;
+    margin: 0 auto;
+
+}
+h1, h2, h3, h4{
+	font-family:"Droid Serif", serif;
+    padding: 1rem;
+    text-shadow: 1px 1px grey;
+}
+h1{
+	color: #FFFFFF;
+    font-size: 6.854rem;
+    float: left;
+}
+h2{
+	
+}
+h3{
+
+}
+h4{
+	
+}
+p, li, a{
+	font-family: "Droid Sans",sans-serif; 
+    padding: 1rem;
+}
+img{
+	width:20%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none;
+}
+a:link, a:visited{
+	transition: all 1s linear;
+    color: #CC3300;
+}
+a:hover, a:active, a:focus{
+	text-decoration: none;
+}
+
+/***********************************
+		LAYOUT
+***********************************/
+.wrapper{
+    padding: 0px;
+	width:90%;
+	max-width: 1020px;
+	min-width: 400px;
+	margin:0 auto 2.618rem;
+	background-color: #d4d4d4;
+}
+.header{
+	background-color: #000;
+    /*min-height: 400px;*/
+    overflow:hidden;
+}
+.main{
+	padding: 12px 45px;
+}
+.footer{
+	background-color: #333333;
+}
+
+/***********************************
+		LINKS 
+-for any that are different than the default
+***********************************/
+
+.footer a:link,
+.footer a:visited{
+	display: block;
+	
+}
+.footer a:hover,
+.footer a:active,
+.footer a:focus{
+    font-style: none;
+    color: #BADA55;
+}
+
+
+/***********************************
+		CONTENT
+***********************************/
+.header h1{
+    text-align:right;
+    margin: 0 auto;
+    max-width: 300px;
+    padding-left: 20%;
+    position: absolute;
+}
+.header:after{
+    content: url(../img/moon-header.jpg);
+    float: right;
+}
+.main h2{
+    font-size: 4.236rem;
+    color:#CC3300;
+}
+.main h3{
+	font-size: 2.618rem;
+    color:#CC3300;
+}
+.main p{
+    line-height: 1.618rem;
+    font-size: 16px
+}
+.main img{
+    border-radius: 35%;
+    width: 35%;	
+}
+.left{
+	float:left;
+	margin-right:10px;
+	margin-bottom: 10px;
+}
+.footer p{
+    padding: 25px;
+    clear:both;
+}
+.footer li{
+    width: 50%;
+    padding: 0px 0px 0px 75px;
+    box-sizing: border-box;
+    float: left;
+}
